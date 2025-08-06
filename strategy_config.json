@@ -1,0 +1,41 @@
+{
+  "straddle": {
+    "entry_time": "09:20",
+    "exit_time": "15:15",
+    "stop_loss": 0.25,
+    "target": 0.5,
+    "reentry_on_sl": true,
+    "max_rentries": 2,
+    "max_loss": 40,
+    "legs": [
+      { "type": "call", "otm": 0 },
+      { "type": "put", "otm": 0 }
+    ]
+  },
+  "strangle": {
+    "entry_time": "09:20",
+    "exit_time": "15:15",
+    "stop_loss": 0.30,
+    "target": 0.40,
+    "reentry_on_sl": true,
+    "max_rentries": 2,
+    "max_loss": 40,
+    "legs": [
+      { "type": "call", "otm": 2 },
+      { "type": "put", "otm": 2 }
+    ]
+
+  },
+  "strangle_200": {
+    "entry_time": "09:20",
+    "exit_time": "15:15",
+    "stop_loss": 0.30,
+    "target": 0.50,
+    "reentry_on_sl": false,
+    "max_loss": 1200,
+    "legs": [
+      { "type": "call", "otm": 4 },
+      { "type": "put", "otm": 4 }
+    ]
+  }
+}
